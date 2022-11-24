@@ -60,7 +60,11 @@ function leJeu(){
             alert("Faux! Tu a fais"+compteur+"erreurs attention! tu peut en faire max 5");
         }
     }
-    alert("Vvvictory!");
+    if(compteur == 5){
+        alert("Retente ta chance!");
+    }else{
+        alert("Victory!");
+    }
 }
 
 leJeu();
